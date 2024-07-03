@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoApp</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="heading">
+        <h1 class="head">TODOAPP</h1>
+    </div>
+
+    <div class="input-container">
+        <input type="text" id="display" placeholder="Enter a new task">
+        <button class="btn" onclick="addTask()">Add Task</button>
+        <input type="date" class="dueDate">
+    </div>
+    <div class="tasks-container">
+        <div class="tasks-column">
+            <h2 class="activated">Activated Tasks</h2>
+            <ol id="activatedTasks"></ol>
+        </div>
+        <div class="tasks-column">
+            <h2 class="completed">Completed Tasks</h2>
+            <ol id="completedTasks"></ol>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
